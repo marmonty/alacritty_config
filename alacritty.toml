@@ -8,20 +8,18 @@ import = [
 # 2. WINDOW LOOKS
 [window]
 dynamic_title = true
+dynamic_padding = true
 opacity = 0.85                      # Clean background transparency (0.0 to 1.0)
 blur = true                         # Blurs what is behind the window in Sway
 decorations ="none"
 [window.padding]
-x = 12                              # Left/Right gap so text doesn't hug screen edges
+x = 10                              # Left/Right gap so text doesn't hug screen edges
 y = 12                              # Top/Bottom gap so text doesn't hug screen edges
 
 # 3. TEXT & FONTS
 [font]
-size = 12.0                         # Adjust this number to scale your text size up/down
+size = 11.0
 
-[font.normal]
-family = "Fira Code"                # Uses your Fedora system's standard terminal font
-style = "Regular"
 
 [env]
 TERM="xterm-256color"
