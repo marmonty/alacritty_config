@@ -1,0 +1,35 @@
+# 1. THEME SELECTION
+# Change the file name below to swap colors (e.g., catppuccin_macchiato, dracula, nord)
+[general]
+import = [
+    "~/.config/alacritty/themes/themes/catppuccin_macchiato.toml"
+]
+
+# 2. WINDOW LOOKS
+[window]
+dynamic_title = true
+opacity = 0.85                      # Clean background transparency (0.0 to 1.0)
+blur = true                         # Blurs what is behind the window in Sway
+decorations ="none"
+[window.padding]
+x = 12                              # Left/Right gap so text doesn't hug screen edges
+y = 12                              # Top/Bottom gap so text doesn't hug screen edges
+
+# 3. TEXT & FONTS
+[font]
+size = 12.0                         # Adjust this number to scale your text size up/down
+
+[font.normal]
+family = "Fira Code"                # Uses your Fedora system's standard terminal font
+style = "Regular"
+
+[env]
+TERM="xterm-256color"
+
+[terminal]
+osc52 = "CopyPaste"
+
+[selection]
+semantic_escape_chars = ",│`|:\"' ()[]{}<>\t"
+save_to_clipboard = true # Copies text automatically the moment you highlight it
+
